@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style_reg_vehicle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+   <title>Register Vehicle</title>
+</head>
+<header class="home">
+      <div class="content">
+        <div id="branding">
+          <h1> <i class="fas fa-car"></i> WheelsCop </h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li id="lower"><a href="reg_vehicle.html">Register Vehicle</a></li>
+            <li><a href="#">Edit  <i class="fas fa-caret-down"></i></a>
+                <ul id="drop-down">
+                    <li><a name="view" href="#" >View</a></li><br/>
+                    <li><a name="update" href="#" >Update</a></li><br/>
+                    <li><a name="del" href="#" >Delete</a></li>
+                </ul>
+            </li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+</header>
+<body>
+<div class="container" id="container">
+	<div class="form-container">
+		<form action="connect_reg_vehicle.php" method="POST">
+			<h3>Please add the details to register the vehicle :</h3>
+            Owner Name: <input type="text" placeholder="Name of the owner" name="owner_name">
+			License Plate No. :<input type="text" placeholder="No. on the license plate" name="plate_no">
+			Car colour: <input type="text" placeholder="Colour of the car" name="color">
+            Size (small/medium/large):<input type="text" placeholder="small(e.g alto) / medium(e.g swift desire) / large(e.g SUV)" name="size">
+            Phone No./Email-id :<input type="text" placeholder="Enter mobile no. or else the email-id of the owner for verification" name="otp">
+            <button type="submit" name="add_user">ADD</button><br/>
+		</form>
+    </div>
+</div>
+<footer>
+    <p><a><i class="fas fa-car"></i></a>WheelsCop, Copyright &copy; 2020</p>
+    <p>More Intelligent. More Secure.</p>
+</footer>
+
+</body>
+</html>

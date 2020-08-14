@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!--<meta name="google-signin-client_id" content="580960116125-cprk4sg4399i88he807v7h8g259qne1o.apps.googleusercontent.com">
+-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <title>Login/Register</title>
+</head>
+
+<header class="home">
+      <div class="content">
+        <div id="branding">
+          <h1> <i class="fas fa-car"></i> WheelsCop </h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+           <!-- <li><a href="#">Database</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="about.html">About Us</a></li>-->
+          </ul>
+        </nav>
+      </div>
+</header>
+<body>
+<h2>More Intelligent.More Secure.</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="server2.php" method="POST">
+			<!--<?php include('errors.php') ?>-->
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Username" name="username"/>
+			<input type="email" placeholder="Email" name="email"/>
+			<input type="password" placeholder="Password" name="password"/>
+			<button type="submit" name="reg_user">Register</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="server2.php" method="POST">
+			<!--<?php include('errors.php') ?>-->
+			<h1>Log in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social" ><!--data-onsuccess="onSignIn"--> <i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="username" placeholder="Username" name="username" />
+			<input type="password" placeholder="Password" name="password"/>
+			<a href="#">Forgot your password?</a>
+			<button type="submit" name="login_user">Log In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login</p>
+				<button class="ghost" id="signIn">Log In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Create a new account and start journey with us</p>
+				<button class="ghost" id="signUp">Register</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+    <p><a><i class="fas fa-car"></i></a>WheelsCop, Copyright &copy; 2020</p>
+    <p>More Intelligent. More Secure.</p>
+</footer>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>
+--><script src="./js/panel.js"></script>
+</body>
+</html>
